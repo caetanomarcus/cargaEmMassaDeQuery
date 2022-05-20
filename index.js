@@ -1,4 +1,3 @@
-const e = require('express');
 var fs = require('fs');
 
 
@@ -44,7 +43,7 @@ const generateQuerys = () => {
         query = query.replace('[MANAGER]', usuario[i].gestor)
         query = query.replace('[EMAIL]', usuario[i].emaildoGestor);
 
-        fs.appendFile(`${usuario[i].colaborador}.txt`, query, function( err) {
+        fs.appendFile(`usuariosQuery.txt`, query, function( err) {
             if (err) {
                 return console.log(err);
             }
@@ -60,5 +59,5 @@ const teste = () => {
     console.log(html.replace('[EMAIL]', 'teste'));
 }
 
-// teste()
+
 
