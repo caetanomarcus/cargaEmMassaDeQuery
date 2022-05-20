@@ -1,0 +1,3 @@
+# PARA RODAR
+
+## `yarn start`

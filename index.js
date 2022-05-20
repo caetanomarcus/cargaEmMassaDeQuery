@@ -4,8 +4,8 @@ var fs = require('fs');
 const usuario = [
     {
         colaborador: "Ana Paula Vidal Almeida",
-        gestor: "José",
-        emaildoGestor: "algua"
+        gestor: "Gestor José",
+        emaildoGestor: "gestorjose@hotmail"
     },
     {
         colaborador: "Ana Paula Vidal Almeida2",
@@ -54,10 +54,5 @@ const generateQuerys = () => {
 }
 
 generateQuerys();
-
-const teste = () => {
-    console.log(html.replace('[EMAIL]', 'teste'));
-}
-
 
 
